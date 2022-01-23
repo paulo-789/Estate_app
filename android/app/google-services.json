@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "665443388043",
+    "project_id": "house-sale-2b864",
+    "storage_bucket": "house-sale-2b864.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665443388043:android:6c654c5eaf1809bfabe28e",
+        "android_client_info": {
+          "package_name": "com.example.real_est"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665443388043-8bfbaudorooustkikpbvbhfdpuar9s6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Qb7EpqaFqxWy_JhgL756q6OQG2iBHSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665443388043-8bfbaudorooustkikpbvbhfdpuar9s6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
