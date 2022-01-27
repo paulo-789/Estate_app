@@ -127,7 +127,15 @@ class LoginPage extends StatefulWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ElevatedButton(onPressed: (){},
+                      ElevatedButton(onPressed: (){
+                        if(_formKey.currentState!.validate()){
+                          setState(() {
+                            email = emailController.text;
+                            password = passwordController.text;
+                          });
+                          userLogin();
+                        }
+                      },
                           child: Text(
                             'Login',
                             style: TextStyle(fontSize: 10.0),
