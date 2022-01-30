@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:real_est/pages/forgot_password.dart';
+import 'package:real_est/pages/signup.dart';
 import 'package:real_est/pages/user_main.dart';
 
 
@@ -142,7 +144,9 @@ class LoginPage extends StatefulWidget {
                           ),
                       ),
                       
-                      TextButton(onPressed: (){},
+                      TextButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ForgortPass(),),);
+                      },
 
                           child: Text(
                             'Forget Password ?',
@@ -157,8 +161,10 @@ class LoginPage extends StatefulWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Do not have an account'),
-                      TextButton(onPressed: (){},
+                      Text('Do not have an account?'),
+                      TextButton(onPressed: (){
+                        Navigator.pushAndRemoveUntil(context, PageRouteBuilder(pageBuilder: (context,a,b) => Signup(),transitionDuration: Duration(seconds: 0)), (route) => false);
+                      },
                           child: Text(
                             'Signup'
                           ))
